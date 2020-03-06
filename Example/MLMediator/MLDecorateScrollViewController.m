@@ -3,7 +3,6 @@
 //  MomoChat
 //
 //  Created by 林志武 on 2019/6/28.
-//  Copyright © 2019 wemomo.com. All rights reserved.
 //
 
 #import "MLDecorateScrollViewController.h"
