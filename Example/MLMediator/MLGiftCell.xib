@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MLGiftCell" id="gTV-IL-0wX" customClass="MLGiftCell">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="125"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="125"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ml_room_applauld" translatesAutoresizingMaskIntoConstraints="NO" id="9Bs-WB-f2E">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="85"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="礼物昵称" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O1w-PO-qHA">
+                        <rect key="frame" x="0.0" y="77" width="80" height="26"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="kGs-6l-3ip"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1陌陌币" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4C-pV-ddX">
+                        <rect key="frame" x="0.0" y="99" width="80" height="26"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="Ylp-ER-n20"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.61956426056338032" green="0.63546434859154932" blue="0.15648107394366201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="9Bs-WB-f2E" secondAttribute="bottom" constant="40" id="3Wn-lf-Jf2"/>
+                <constraint firstItem="9Bs-WB-f2E" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="KuB-QZ-Vm1"/>
+                <constraint firstAttribute="trailing" secondItem="9Bs-WB-f2E" secondAttribute="trailing" id="N56-8q-0GL"/>
+                <constraint firstItem="O1w-PO-qHA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Nau-PX-hfe"/>
+                <constraint firstItem="Z4C-pV-ddX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ZOW-7X-GmT"/>
+                <constraint firstAttribute="bottom" secondItem="Z4C-pV-ddX" secondAttribute="bottom" id="dGe-Tc-7mz"/>
+                <constraint firstItem="9Bs-WB-f2E" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="dQ0-YE-1me"/>
+                <constraint firstAttribute="trailing" secondItem="Z4C-pV-ddX" secondAttribute="trailing" id="mAd-nM-oZg"/>
+                <constraint firstAttribute="trailing" secondItem="O1w-PO-qHA" secondAttribute="trailing" id="ri9-UD-b1t"/>
+                <constraint firstAttribute="bottom" secondItem="O1w-PO-qHA" secondAttribute="bottom" constant="22" id="uk8-k7-jvH"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="74" height="113"/>
+            <connections>
+                <outlet property="giftNameLabel" destination="O1w-PO-qHA" id="3CS-UM-gCV"/>
+                <outlet property="iconImageView" destination="9Bs-WB-f2E" id="dRz-nO-NG3"/>
+                <outlet property="priceLabel" destination="Z4C-pV-ddX" id="7jQ-kl-MdJ"/>
+            </connections>
+            <point key="canvasLocation" x="2.8985507246376816" y="164.39732142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ml_room_applauld" width="128" height="128"/>
+    </resources>
+</document>

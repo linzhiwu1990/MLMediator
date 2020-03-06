@@ -1,0 +1,18 @@
+source 'https://github.com/CocoaPods/Specs.git'
+#use_frameworks!
+
+ENV['SWIFT_VERSION'] = '5'
+platform :ios, '8.0'
+
+target 'MLMediator_Example' do
+  pod 'MLMediator', :path => '../'
+  pod 'TXLiteAVSDK_Professional'
+  pod 'MBProgressHUD', '~> 1.1.0'
+  pod 'TWMessageBarManager'
+
+  target 'MLMediator_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end

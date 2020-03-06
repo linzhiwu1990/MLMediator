@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>protocolName</key>
+		<string>MLBasicsModuleServiceProtocol</string>
+		<key>className</key>
+		<string>MLBasicsModuleService</string>
+	</dict>
+	<dict>
+		<key>protocolName</key>
+		<string>MLMediaModuleServiceProtocol</string>
+		<key>className</key>
+		<string>MLMediaModuleService</string>
+	</dict>
+	<dict>
+		<key>protocolName</key>
+		<string>MLDecorateModuleServiceProtocol</string>
+		<key>className</key>
+		<string>MLDecorateModuleService</string>
+	</dict>
+</array>
+</plist>
